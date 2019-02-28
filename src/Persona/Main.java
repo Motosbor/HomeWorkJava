@@ -15,7 +15,7 @@ public class Main {
 
         Persona persona = new Persona("Ivan", "Ivanov", "Mihailovich");
 
-        persona.setChildrens(new ArrayList<Persona>(), new Persona[]{children, children1, children2});
+        persona.setChildrens( new Persona[]{children, children1, children2});
 
 //        Persona.personaPrinter(persona);
 //

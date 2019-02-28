@@ -47,7 +47,18 @@ public class Team implements Comparable<Team> {
     }
 
     @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        return name == ((Team) obj).name &&
+                country == ((Team) obj).country &&
+                  seazon == ((Team) obj).seazon;
+    }
+
+    @Override
     public int compareTo(Team o) {
-        return this.name.compareTo(o.name);
+        int x = this.name.compareTo(o.name);
+        System.out.println(x);
+        return x;
     }
 }
