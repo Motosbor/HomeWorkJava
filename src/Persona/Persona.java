@@ -54,7 +54,7 @@ public class Persona implements Serializable {
         return childrens;
     }
 
-    public void setChildrens(ArrayList<Persona> childrens,Persona[] personas) {
+    public void setChildrens(Persona[] personas) {
         ArrayList<Persona> personaArr = new ArrayList<Persona>(Arrays.asList(personas));
         this.childrens = personaArr;
     }
