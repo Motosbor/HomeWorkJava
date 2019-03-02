@@ -25,6 +25,7 @@ public class Main {
                 max = match[chars[i]];
                 position = i;
             }
+            System.out.println("Символ '" + chars[i] + "' повторяется " + match[chars[i]] + " раз");
         }
         System.out.println("Наибольшее содержание символов - " + chars[position] + " В количестве - " + match[chars[position]]);
     }
