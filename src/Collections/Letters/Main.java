@@ -1,52 +1,58 @@
 package Collections.Letters;
 
 import java.io.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.ArrayList;
 
 public class Main {
 
+    private static void countCharacters(ArrayList<String> strings) {
+
+        final char[] chars = new char[26];
+        for (int i = 0; i < chars.length; i++) {
+            chars[i] = (char) (65 + i);
+        }
+        final int[] match = new int[256];
+        for (String s:strings) {
+            final char[] array = s.toCharArray();
+            for (final char c : array) {
+                match[c] = match[c] + 1;
+            }
+        }
+        int max = Integer.MIN_VALUE;
+        int position = 0;
+        for (int i = 0; i < chars.length; i++) {
+            if ( max < match[chars[i]]){
+                max = match[chars[i]];
+                position = i;
+            }
+        }
+        System.out.println("Наибольшее содержание символов - " + chars[position] + " В количестве - " + match[chars[position]]);
+    }
+
+
     public static void main(String[] args) {
-        String s;
+        String s ;
 
-        int num = 0;
-
-        int letter = 0;
 
         try (BufferedReader reader = new BufferedReader(new FileReader("Letter.txt"))) {
 
-            String numReg = "[0-9]";
-            String letterReg = "[A-Z]";
-
-            Pattern pattern = Pattern.compile(numReg);
-            Pattern pattern1 = Pattern.compile(letterReg);
+            ArrayList<String> stringArrayList = new ArrayList<>();
 
             while ((s = reader.readLine())!=null){
-
-            Matcher matcher = pattern.matcher(s);
-            while (matcher.find()) {
-                num++;
+                stringArrayList.add(s);
             }
 
-            Matcher matcher1 = pattern1.matcher(s);
-            while (matcher1.find()){
-                letter++;
-            }
+            countCharacters(stringArrayList);
 
-            }
-
-            System.out.println(" Цифры - " + num + " Буквы - " + letter);
-            if(num > letter) {
-                System.out.println("Цифр больше");
-            }else {
-                System.out.println("Букв больше");
-            }
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
+
 
     }
 }

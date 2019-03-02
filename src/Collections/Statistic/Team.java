@@ -58,7 +58,6 @@ public class Team implements Comparable<Team> {
     @Override
     public int compareTo(Team o) {
         int x = this.name.compareTo(o.name);
-        System.out.println(x);
         return x;
     }
 }
