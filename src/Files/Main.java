@@ -11,8 +11,6 @@ public class Main {
 
     public static void main(String[] args){
         Path p1 = Paths.get("C:\\Users\\Rus\\IdeaProjects\\HomeWorkJava\\Letter.txt");
-
-
         try {
 
             BasicFileAttributes fileAtr = Files.readAttributes(p1, BasicFileAttributes.class);
@@ -26,6 +24,13 @@ public class Main {
             System.out.println("Доступен для чтения - " + Files.isReadable(p1));
             System.out.println("Доступен для записи - " + Files.isWritable(p1));
 
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        Path p2 = Paths.get("C:\\Users\\Rus\\IdeaProjects\\HomeWorkJava");
+        try {
+            Files.walkFileTree(p2,new MyVisitor());
         } catch (IOException e) {
             e.printStackTrace();
         }
