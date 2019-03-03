@@ -12,9 +12,12 @@ public class Main {
         if(f.getFlightList().isEmpty()){
             System.out.println("Рейс пуст");
         }else {
+            int sum = 0;
             for (Passenger p : f.getFlightList()) {
                 System.out.println(p.getName() + " " + p.getDocNum());
+                sum++;
             }
+            System.out.println("Количество пассажиров - " + sum);
         }
     }
 
