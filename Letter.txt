@@ -56,7 +56,7 @@ SEL1OTH  MVI    ALLEQ,X'00'        alleq=false
 SEL1END  LA     R6,1(R6)           i=i+1
          B      LOOPI
 ELOOPI   CLI    ALLEQ,X'01'        if alleq
-         BNE    SEL2B
+         BNE    SEL2B РРР
          MVC    TXT,=CL40'all elements are equal'
          B      SEL2END
 SEL2B    CLI    INCRE,X'01'        if incre
@@ -72,7 +72,7 @@ SEL2END  MVI    PG,C' '
          XPRNT  PG,L'PG
          BR     R14                return to caller
 *        ----   ----------------------------------------
-SNAME    DS     CL3
+SNAME    DS     CL3 РРР
 ABC      DC     CL2'AA',CL2'BB',CL2'CC'
 AAA      DC     CL2'AA',CL2'AA',CL2'AA'
 ACB      DC     CL2'AA',CL2'CC',CL2'BB'
