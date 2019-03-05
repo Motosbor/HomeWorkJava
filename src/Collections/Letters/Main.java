@@ -45,8 +45,9 @@ public class Main {
                 for (char c:chars) {
                    if(charMap.containsKey(c)){
                        charMap.put(c,(Integer)(charMap.get(c)+1));
-                   }else
-                    charMap.put(c,(Integer)(1));
+                   }else {
+                       charMap.put(c, (Integer) (1));
+                   }
                 }
                 stringArrayList.add(s);
             }
