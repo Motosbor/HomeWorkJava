@@ -76,7 +76,7 @@ public class Main {
 
         System.out.println("---------------");
 
-        Department withLowSalary = WorkBd.getByAverageValue(conn);
+        Department withLowSalary = WorkBd.getByLowAverageValue(conn);
 
         Department.printDep(withLowSalary);
 
@@ -94,6 +94,14 @@ public class Main {
         for (Department d:departmentList) {
             Department.printDep(d);
         }
+
+        System.out.println("---------------");
+
+        WorkBd.deleteMaxSalary(conn);
+
+        List<Employee> employees3 = WorkBd.getAllEmployee(conn);
+
+        printEmployees(employees3);
 
 
 

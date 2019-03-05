@@ -106,7 +106,7 @@ public class WorkBd {
         return temp;
 
     }
-    public static Department getByAverageValue(Connection con){
+    public static Department getByLowAverageValue(Connection con){
 
         List<Department> departments = getAllDepartments(con);
 
@@ -164,6 +164,27 @@ public class WorkBd {
             }catch (SQLException e){
                 e.printStackTrace();
             }
+        }
+
+    }
+
+    public static void deleteMaxSalary(Connection con){
+
+        List<Employee> employees = new ArrayList<>();
+        employees = getAllEmployee(con);
+        double average = 0 ;
+        for (Employee emp:employees) {
+            average += emp.getSalary();
+        }
+        average /= employees.size();
+
+
+        try {
+            PreparedStatement st = con.prepareStatement("delete from employees where salary > ?");
+            st.setDouble(1,average);
+            st.execute();
+        }catch (SQLException e){
+            e.printStackTrace();
         }
 
     }
