@@ -2,9 +2,7 @@ package JDBC;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by лоцманенко_рр on 04.03.2019.
@@ -110,21 +108,10 @@ public class WorkBd {
     }
     public static Department getByAverageValue(Connection con){
 
-        List<Department> departments = new ArrayList<>();
-        try {
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select * from departments");
-            while (rs.next()){
-                int id = rs.getInt("id");
-                String name = rs.getString("name");
-                Department department = new Department(id,name);
-                departments.add(department);
-            }
-        }catch (SQLException e){
-            e.printStackTrace();
-        }
+        List<Department> departments = getAllDepartments(con);
 
         Department result = new Department();
+
         double res = Double.MAX_VALUE;
 
         for (Department dep:departments) {
@@ -141,5 +128,46 @@ public class WorkBd {
         }
         return result;
     }
+
+    public static List<Department> getAllDepartments(Connection con){
+        List<Department> departments = new ArrayList<>();
+        try {
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery("select * from departments");
+            while (rs.next()){
+                int id = rs.getInt("id");
+                String name = rs.getString("name");
+                Department department = new Department(id,name);
+                departments.add(department);
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return departments;
+    }
+
+    public static void updateSalary(Connection con){
+
+        List<Department> departments = getAllDepartments(con);
+
+        for (Department dep:departments) {
+            try {
+                if(dep.getId() == 1) {
+                PreparedStatement st = con.prepareStatement("update employees set salary = salary + (salary * 5 / 100) where department_id=?");
+                    st.setInt(1, dep.getId());
+                    st.execute();
+                }else if(dep.getId()== 2){
+                    PreparedStatement st = con.prepareStatement("update employees set salary = salary + (salary * 2.5 / 100) where department_id=?");
+                    st.setInt(1, dep.getId());
+                    st.execute();
+                }
+            }catch (SQLException e){
+                e.printStackTrace();
+            }
+        }
+
+    }
+
+
 
 }

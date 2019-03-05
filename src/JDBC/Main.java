@@ -80,6 +80,22 @@ public class Main {
 
         Department.printDep(withLowSalary);
 
+        System.out.println("---------------");
+
+        WorkBd.updateSalary(conn);
+
+        List<Employee> employees2 = WorkBd.getAllEmployee(conn);
+
+        printEmployees(employees2);
+
+        System.out.println("---------------");
+
+        List<Department> departmentList = WorkBd.getAllDepartments(conn);
+        for (Department d:departmentList) {
+            Department.printDep(d);
+        }
+
+
 
 
         try {
