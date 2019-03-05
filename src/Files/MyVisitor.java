@@ -10,6 +10,7 @@ public class MyVisitor implements FileVisitor<Path> {
 
     @Override
     public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
+        System.out.println(dir + "  ------Зашел в папку");
         return FileVisitResult.CONTINUE;
     }
 
