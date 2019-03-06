@@ -44,65 +44,66 @@ public class Main {
 //            e.printStackTrace();
 //        }
 //
-        Path p2 = Paths.get("C:\\Users\\Админ\\IdeaProjects\\HomeWorkJava");
-        try {
-            Files.walkFileTree(p2, new MyVisitor());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        rekursia("C:\\Users\\Админ\\IdeaProjects\\HomeWorkJava");
-
-
-//        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-//
-//        List<String> strings = new ArrayList<>();
-//
+//        Path p2 = Paths.get("C:\\Users\\Админ\\IdeaProjects\\HomeWorkJava");
 //        try {
+//            Files.walkFileTree(p2, new MyVisitor());
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 //
-//            String file = reader.readLine();
-//
-//            Path filePath = Paths.get(file);
-//
-//            if (Files.exists(filePath)) {
-//
-//                strings = Files.readAllLines(filePath);
-//
-//                ArrayList<String> copyStrings = new ArrayList<>();
-//
-//                for (String s : strings) {
-//                    if (s.length() > 30) {
-//                        copyStrings.add(s);
-//                    }
-//                }
-//
-//                String copyfile = reader.readLine();
-//                String keep = copyfile;
-//                String plus = ".txt";
-//                Path copyPath = Paths.get(copyfile + plus);
-//
-//                if (Files.exists(copyPath)) {
-//                    int count = 1;
-//                    while (Files.exists(copyPath)){
-//                        copyfile = copyfile + count;
-//                        copyPath = Paths.get(copyfile + plus);
-//                        copyfile = keep;
-//                        count++;
-//                    }
-//                    Files.write(copyPath, copyStrings,StandardOpenOption.CREATE_NEW);
-//                }else {
-//                    Files.write(copyPath, copyStrings,StandardOpenOption.CREATE_NEW);
-//                }
-//
-//            }else {
-//                System.out.println("Файла не существует");
-//            }
-//            } catch(IOException e){
-//                e.printStackTrace();
-//            }
-//
-        }
+//        rekursia("C:\\Users\\Админ\\IdeaProjects\\HomeWorkJava");
 
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        List<String> strings = new ArrayList<>();
+
+        try {
+
+            String file = reader.readLine();
+
+            Path filePath = Paths.get(file);
+
+            if (Files.exists(filePath)) {
+
+                strings = Files.readAllLines(filePath);
+
+                ArrayList<String> copyStrings = new ArrayList<>();
+
+                for (String s : strings) {
+                    if (s.length() > 30) {
+                        copyStrings.add(s);
+                    }
+                }
+
+                String copyfile = reader.readLine();
+                String keep = copyfile;
+                String plus = ".txt";
+                Path copyPath = Paths.get(copyfile + plus);
+
+                if (Files.exists(copyPath)) {
+                    int count = 1;
+                    while (Files.exists(copyPath)){
+                        copyfile = copyfile + count;
+                        copyPath = Paths.get(copyfile + plus);
+                        copyfile = keep;
+                        count++;
+                    }
+                    Files.copy(filePath, copyPath);
+                    Files.write(copyPath, copyStrings,StandardOpenOption.TRUNCATE_EXISTING);
+                }else {
+                    Files.copy(filePath, copyPath);
+                    Files.write(copyPath, copyStrings,StandardOpenOption.TRUNCATE_EXISTING);
+                }
+
+            }else {
+                System.out.println("Файла не существует");
+            }
+            } catch(IOException e){
+                e.printStackTrace();
+            }
+
+        }
 }
 
 
