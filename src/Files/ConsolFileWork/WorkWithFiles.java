@@ -9,7 +9,6 @@ import java.nio.file.Paths;
 
 
 
-
 public class WorkWithFiles {
 
 
@@ -32,6 +31,52 @@ public class WorkWithFiles {
 
     }
 
+    public static void moveFile(String nameFile, String destination) {
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        Path path = Paths.get(nameFile);
+
+        Path pathDest = Paths.get(destination);
+
+        int count = 1;
+
+        String keep = destination;
+
+        if (Files.exists(path)) {
+
+            if (!Files.exists(pathDest)) {
+                try {
+                    Files.move(path, pathDest);
+                    System.out.println("Файл перемещен - " + pathDest.toString());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            } else {
+                System.out.println("Файл уже с таким именем существует, создать копию (Y/N) ?");
+                try {
+                    String in = reader.readLine();
+                    if (in.equals("Y")) {
+                        while (Files.exists(pathDest)) {
+                            String modified = modificator(destination, count);
+                            pathDest = Paths.get(modified);
+                            destination = keep;
+                            count++;
+                        }
+                        Files.move(path, pathDest);
+                        System.out.println("Файл перемещен - " + pathDest.toString());
+                    } else if (in.equals("N")) {
+                        System.out.println("Файл не перемещен");
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }else {
+            System.out.println("Файл источник не найден");
+        }
+    }
+
     public static void deleteFile(String nameFile){
         Path path = Paths.get(nameFile);
         if (Files.exists(path)){
@@ -49,7 +94,7 @@ public class WorkWithFiles {
 
 
 
-    public static void copyFile(String nameFile, String sourceFile) {
+    public static void copyFile(String sourceFile, String nameFile) {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Path sourcePath = Paths.get(sourceFile);
