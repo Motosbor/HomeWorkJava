@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<MAIN val="Небанковская кредитная организация-центральный контрагент
+«Национальный Клиринговый Центр» (Акционерное общество)">
+    <REPORT date="12.01.2018">
+        <NAME_OF_PARTICIPANT name = "ИвановИИ" id = "MC9017400000"/>
+        <INFO_MONEY_POS>
+            <MONEY_POS id="31006">
+                <Type>
+                    <Acces_Grant>false</Acces_Grant>
+                    <Validation_pool>false</Validation_pool>
+                    <Validation_unified_pool>false</Validation_unified_pool>
+                </Type>
+                <Values money_cod = "CNY" org_cod = "NSD" name_org = "НРД" bill_no = "30403830900103A00383" bill_ensure = "null" bill_refunds_and_commissions = "false" take_comissioms = "false" change = "*">
+                <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "null"/>
+                </Values>
+                <Values money_cod = "EUR" org_cod = "NSD" name_org = "НРД" bill_no = "30403830900103A00383" bill_ensure = "null" bill_refunds_and_commissions = "false" take_comissioms = "false" change = "*">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "null"/>
+                </Values>
+                <Values money_cod = "GBP" org_cod = "NSD" name_org = "НРД" bill_no = "30403830900103A00383" bill_ensure = "null" bill_refunds_and_commissions = "false" take_comissioms = "false" change = "*">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "null"/>
+                </Values>
+                <Values money_cod = "RUR" org_cod = "NSD" name_org = "НРД" bill_no = "30403830900103A00383" bill_ensure = "null" bill_refunds_and_commissions = "false" take_comissioms = "false" change = "*">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "null"/>
+                </Values>
+                <Values money_cod = "USD" org_cod = "NSD" name_org = "НРД" bill_no = "30403830900103A00383" bill_ensure = "null" bill_refunds_and_commissions = "false" take_comissioms = "false" change = "*">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "null"/>
+                </Values>
+            </MONEY_POS>
+            <MONEY_POS id="31007">
+                <Type>
+                    <Acces_Grant>false</Acces_Grant>
+                    <Validation_pool>false</Validation_pool>
+                    <Validation_unified_pool>false</Validation_unified_pool>
+                </Type>
+                <Values money_cod = "CNY" org_cod = "NSD" name_org = "НРД" bill_no = "30403830900103A00383" bill_ensure = "null" bill_refunds_and_commissions = "false" take_comissioms = "false" change = "*">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "null"/>
+                </Values>
+                <Values money_cod = "EUR" org_cod = "NSD" name_org = "НРД" bill_no = "30403830900103A00383" bill_ensure = "null" bill_refunds_and_commissions = "false" take_comissioms = "false" change = "*">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "null"/>
+                </Values>
+                <Values money_cod = "GBP" org_cod = "NSD" name_org = "НРД" bill_no = "30403830900103A00383" bill_ensure = "null" bill_refunds_and_commissions = "false" take_comissioms = "false" change = "*">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "null"/>
+                </Values>
+                <Values money_cod = "RUR" org_cod = "NSD" name_org = "НРД" bill_no = "30403830900103A00383" bill_ensure = "null" bill_refunds_and_commissions = "false" take_comissioms = "false" change = "*">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "null"/>
+                </Values>
+                <Values money_cod = "USD" org_cod = "NSD" name_org = "НРД" bill_no = "30403830900103A00383" bill_ensure = "null" bill_refunds_and_commissions = "false" take_comissioms = "false" change = "*">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "null"/>
+                </Values>
+            </MONEY_POS>
+            <MONEY_POS id="31008">
+                <Type>
+                    <Acces_Grant>false</Acces_Grant>
+                    <Validation_pool>false</Validation_pool>
+                    <Validation_unified_pool>false</Validation_unified_pool>
+                </Type>
+                <Values money_cod = "CNY" org_cod = "NSD" name_org = "НРД" bill_no = "30403830900103A00383" bill_ensure = "null" bill_refunds_and_commissions = "false" take_comissioms = "false" change = "*">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "null"/>
+                </Values>
+                <Values money_cod = "EUR" org_cod = "NSD" name_org = "НРД" bill_no = "30403830900103A00383" bill_ensure = "null" bill_refunds_and_commissions = "false" take_comissioms = "false" change = "*">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "null"/>
+                </Values>
+                <Values money_cod = "GBP" org_cod = "NSD" name_org = "НРД" bill_no = "30403830900103A00383" bill_ensure = "null" bill_refunds_and_commissions = "false" take_comissioms = "false" change = "*">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "null"/>
+                </Values>
+                <Values money_cod = "RUR" org_cod = "NSD" name_org = "НРД" bill_no = "30403830900103A00383" bill_ensure = "null" bill_refunds_and_commissions = "false" take_comissioms = "false" change = "*">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "null"/>
+                </Values>
+                <Values money_cod = "USD" org_cod = "NSD" name_org = "НРД" bill_no = "30403830900103A00383" bill_ensure = "null" bill_refunds_and_commissions = "false" take_comissioms = "false" change = "*">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "null"/>
+                </Values>
+            </MONEY_POS>
+
+        </INFO_MONEY_POS>
+        <INFO_SELL_BILLS>
+            <BILL_GROUP id = "31006">
+                <Bill id = "D01+00000F00" name = "Счет довер. управления1" bill_state = "A" bill_depo = "MHL000018831" part_bill_depo = "36MC9017400004F00" conformity_bill = "true" without_acces = "false" make_a_deal = "false" unite_bill = "false" change ="null">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "false"/>
+                </Bill>
+                <Bill id = "D01-00000F00" name = "Счет довер. управления1" bill_state = "A" bill_depo = "MHL000018831" part_bill_depo = "36MC9017400004F00" conformity_bill = "true" without_acces = "false" make_a_deal = "false" unite_bill = "false" change ="null">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "false"/>
+                </Bill>
+                <Bill id = "NCC+00031006" name = "Технический счет" bill_state = "A" bill_depo = "MHL000018831" part_bill_depo = "36MC9017400004F00" conformity_bill = "true" without_acces = "false" make_a_deal = "false" unite_bill = "false" change ="null">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "false"/>
+                </Bill>
+            </BILL_GROUP>
+            <BILL_GROUP id = "31007">
+                <Bill id = "D01+00000F00" name = "Счет довер. управления1" bill_state = "A" bill_depo = "MHL000018831" part_bill_depo = "36MC9017400004F00" conformity_bill = "true" without_acces = "false" make_a_deal = "false" unite_bill = "false" change ="null">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "false"/>
+                </Bill>
+                <Bill id = "D01-00000F00" name = "Счет довер. управления1" bill_state = "A" bill_depo = "MHL000018831" part_bill_depo = "36MC9017400004F00" conformity_bill = "true" without_acces = "false" make_a_deal = "false" unite_bill = "false" change ="null">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "false"/>
+                </Bill>
+                <Bill id = "NCC+00031006" name = "Технический счет" bill_state = "A" bill_depo = "MHL000018831" part_bill_depo = "36MC9017400004F00" conformity_bill = "true" without_acces = "false" make_a_deal = "false" unite_bill = "false" change ="null">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "false"/>
+                </Bill>
+            </BILL_GROUP>
+            <BILL_GROUP id = "31008">
+                <Bill id = "D01+00000F00" name = "Счет довер. управления1" bill_state = "A" bill_depo = "MHL000018831" part_bill_depo = "36MC9017400004F00" conformity_bill = "true" without_acces = "false" make_a_deal = "false" unite_bill = "false" change ="null">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "false"/>
+                </Bill>
+                <Bill id = "D01-00000F00" name = "Счет довер. управления1" bill_state = "A" bill_depo = "MHL000018831" part_bill_depo = "36MC9017400004F00" conformity_bill = "true" without_acces = "false" make_a_deal = "false" unite_bill = "false" change ="null">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "false"/>
+                </Bill>
+                <Bill id = "NCC+00031006" name = "Технический счет" bill_state = "A" bill_depo = "MHL000018831" part_bill_depo = "36MC9017400004F00" conformity_bill = "true" without_acces = "false" make_a_deal = "false" unite_bill = "false" change ="null">
+                    <signs_transfer T0_to_T_on_performance = "false" T0_to_T_rate_of_net_liabilities = "false" T0_to_T_rate_of_net_demand = "false"/>
+                </Bill>
+            </BILL_GROUP>
+
+        </INFO_SELL_BILLS>
+    </REPORT>
+</MAIN>
