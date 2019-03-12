@@ -11,11 +11,11 @@
     </Person>
     <Person >
         <id>E02</id>
-        <Name>Tony Bleir</Name>
-        <Addres>10 Downing Street,London,UK</Addres>
-        <Telephone>(061)98765</Telephone>
-        <Fax>(061)98765</Fax>
-        <E-mail>blair@everywhere.com</E-mail>
+        <Name>Bill Clinton</Name>
+        <Addres>White House,USA</Addres>
+        <Telephone>(001)640098765</Telephone>
+        <Fax>(001)640098765</Fax>
+        <E-mail>bill@everywhere.com</E-mail>
     </Person>
     <Person >
         <id>E03</id>
