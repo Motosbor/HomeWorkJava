@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="view.xsl" ?>
+<PERSONS>
+    <Person >
+        <id>E01</id>
+        <Name>Tony Bleir</Name>
+        <Addres>10 Downing Street,London,UK</Addres>
+        <Telephone>(061)98765</Telephone>
+        <Fax>(061)98765</Fax>
+        <E-mail>blair@everywhere.com</E-mail>
+    </Person>
+    <Person >
+        <id>E02</id>
+        <Name>Tony Bleir</Name>
+        <Addres>10 Downing Street,London,UK</Addres>
+        <Telephone>(061)98765</Telephone>
+        <Fax>(061)98765</Fax>
+        <E-mail>blair@everywhere.com</E-mail>
+    </Person>
+    <Person >
+        <id>E03</id>
+        <Name>Tony Bleir</Name>
+        <Addres>10 Downing Street,London,UK</Addres>
+        <Telephone>(061)98765</Telephone>
+        <Fax>(061)98765</Fax>
+        <E-mail>blair@everywhere.com</E-mail>
+    </Person>
+    <Person >
+        <id>E04</id>
+        <Name>Tony Bleir</Name>
+        <Addres>10 Downing Street,London,UK</Addres>
+        <Telephone>(061)98765</Telephone>
+        <Fax>(061)98765</Fax>
+        <E-mail>blair@everywhere.com</E-mail>
+    </Person>
+    <Person >
+        <id>E05</id>
+        <Name>Tony Bleir</Name>
+        <Addres>10 Downing Street,London,UK</Addres>
+        <Telephone>(061)98765</Telephone>
+        <Fax>(061)98765</Fax>
+        <E-mail>blair@everywhere.com</E-mail>
+    </Person>
+    <Person >
+        <id>E06</id>
+        <Name>Tony Bleir</Name>
+        <Addres>10 Downing Street,London,UK</Addres>
+        <Telephone>(061)98765</Telephone>
+        <Fax>(061)98765</Fax>
+        <E-mail>blair@everywhere.com</E-mail>
+    </Person>
+</PERSONS>
