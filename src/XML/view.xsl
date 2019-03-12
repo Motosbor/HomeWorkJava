@@ -19,9 +19,10 @@
                             <td>E-Mail</td>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody>K
                         <xsl:for-each select="Person">
-                            <xsl:if test="Name='Bill Clinton'">
+                            <xsl:sort select="Name" data-type="text"></xsl:sort>
+                            <!--<xsl:if test="Name='Bill Clinton'">-->
                             <tr>
                                 <td>
                                     <xsl:value-of select="id"></xsl:value-of>
@@ -42,7 +43,7 @@
                                     <xsl:value-of select="E-mail"></xsl:value-of>
                                 </td>
                             </tr>
-                            </xsl:if>
+                            <!--</xsl:if>-->
                         </xsl:for-each>
                     </tbody>
                 </table>
