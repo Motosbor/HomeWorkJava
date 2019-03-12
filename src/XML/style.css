@@ -2,6 +2,8 @@ table, th, td {
   border: 1px solid black;
 }
 thead{
-background:grey;
+font-weight:bolder;
+}
+tbody{
 font-weight:bolder;
 }
