@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<allgroups>
+    <group groupNumber="1">
+        <Student>
+            <name>Vasil</name>
+        </Student><Student>
+    <name>Ivan</name>
+</Student>
+    </group>
+    <group groupNumber="2">
+        <Student>
+            <name>Matia</name>
+        </Student>
+        <Student>
+            <name>Mihail</name>
+        </Student>
+    </group>
+</allgroups>
