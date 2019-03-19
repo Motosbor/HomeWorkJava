@@ -48,7 +48,7 @@ public class Main {
     }
 
 
-    public static Runnable variableRun(String str,int i){
+    public static Runnable variableRun (String str,int i){
         Runnable run = () -> {
             for (int j = 0; j < i ; j++) {
                 System.out.println(str);
