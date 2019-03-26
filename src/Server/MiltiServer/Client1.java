@@ -32,19 +32,8 @@ public class Client1 {
                 System.out.println("Сообщение сервера:");
                 System.out.print(inputMessage);
 
-                login = reader.readLine();
-                out.write(login);
-                out.newLine();
-                out.flush();
-
-                choose = reader.readLine();
-                out.write(choose);
-                out.newLine();
-                out.flush();
-
 
                 ReadMessage readMessage = new ReadMessage(clientSocket);
-
                 WriteMessage writeMessage = new WriteMessage(clientSocket);
 
 

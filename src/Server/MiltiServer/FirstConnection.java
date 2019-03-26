@@ -5,19 +5,20 @@ import java.net.Socket;
 
 public class FirstConnection  {
 
-    public static PrintWriter write;
     public static String request = "Введите логин:";
     public static String secondRequest = " Выберите чат 1 - Общий , 2 - Персональный";
     public static String resultLogin;
     public static BufferedReader readFromClient;
+    public static BufferedWriter write;
 
-   public static void FirstConnect(Socket socket){
+   public FirstConnection(Socket socket){
 
        try {
 
-           write = new PrintWriter(new OutputStreamWriter(socket.getOutputStream()));
+           write = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 
-           write.println(request);
+           write.write(request);
+           write.newLine();
            write.flush();
            System.out.println("Запрос логина");
 
@@ -26,7 +27,8 @@ public class FirstConnection  {
            resultLogin = readFromClient.readLine();
            System.out.println("Ответ получен");
 
-           write.println(secondRequest);
+           write.write(secondRequest);
+           write.newLine();
            write.flush();
 
            while (true) {
@@ -37,16 +39,25 @@ public class FirstConnection  {
                    case "1":
                        MultiConnector serverClient = new MultiConnector(socket, resultLogin);
                        Server.ClientsList.add(serverClient);
+                       write.write("Выбран общий чат");
+                       write.newLine();
+                       write.flush();
                        break; //Создание общего потока для отправки сообщений всем клиентам
                    case "2":
                        PersonalConnector personalConnector = new PersonalConnector(socket, resultLogin);
                        Server.PersonalConnectorList.add(personalConnector);
-                       break;//создание потока для персональной отправки сообщений выбранному клиенту
+                       write.write("Выбран персональный чат");
+                       write.newLine();
+                       write.flush();
+                       break;
+                       //создание потока для персональной отправки сообщений выбранному клиенту
 
                    default:
-                       write.println("Неверный ввод");
+                       write.write("Неверный ввод");
+                       write.newLine();
                        write.flush();
                }
+               break;
            }
 
 

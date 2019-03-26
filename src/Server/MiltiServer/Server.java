@@ -26,7 +26,9 @@ public class Server {
                 System.out.println("Ожидание подклюения");
                 Socket client = serverSocket.accept();
                 System.out.println("Подключение успешно");
-                FirstConnection.FirstConnect(client);
+
+                FirstConnection firstConnection = new FirstConnection(client);
+
 
             }
 
