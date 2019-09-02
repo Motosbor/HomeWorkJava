@@ -1,58 +1,127 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <HOUSES>
+        
     <House no="1">
+                
         <Persons>
+                        
             <Person>
+                                
                 <name>Robert</name>
+                                
                 <Description>Father</Description>
+                            
             </Person>
+                        
             <Person>
+                                
                 <name>Gloria</name>
+                                
                 <Description>Mother</Description>
+                            
             </Person>
+                        
             <Person>
+                                
                 <name>Susan</name>
+                                
                 <Description>Child 1</Description>
+                            
             </Person>
+                        
             <Person>
+                                
                 <name>Stephen</name>
+                                
                 <Description>Father</Description>
+                            
             </Person>
+                    
         </Persons>
+            
     </House>
+        
     <House no="2">
+                
         <Persons>
+                        
             <Person>
+                                
                 <name>John</name>
+                                
                 <Description>Father</Description>
+                            
             </Person>
+                        
             <Person>
+                                
                 <name>Mary</name>
+                                
                 <Description>Mother</Description>
+                            
             </Person>
+                        
             <Person>
+                                
                 <name>Joseph</name>
+                                
                 <Description>Child 1</Description>
+                            
             </Person>
+                    
         </Persons>
+            
     </House>
+        
     <House no="3">
+                
         <Persons>
+                        
             <Person>
+                                
                 <name>Linda</name>
+                                
                 <Description>Individual</Description>
+                            
             </Person>
+                    
         </Persons>
+            
     </House>
-<House no="4">
+    
+    <House no="4">
+                
         <Persons>
+                        
             <Person>
+                                
                 <name>Igor</name>
+                                
                 <Description>Lonely</Description>
+                            
             </Person>
+                    
         </Persons>
+            
     </House>
-<House no="4">
+    
+    <House no="4">
+                
+        <Persons>
+                        
+            <Person>
+                                
+                <name>Igor</name>
+                                
+                <Description>Lonely</Description>
+                            
+            </Person>
+                    
+        </Persons>
+            
+    </House>
+    
+    <House no="4">
         <Persons>
             <Person>
                 <name>Igor</name>
